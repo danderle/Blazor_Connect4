@@ -1,0 +1,59 @@
+﻿.row {
+    display: grid;
+    align-self: center;
+    margin: auto;
+    width: 360px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.cell {
+    width: 80px;
+    height: 80px;
+    padding: 10px;
+    border: 1px solid black;
+    background: blue;
+}
+
+.chip {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+.chip.red{
+    background: red;
+}
+
+.chip.yellow {
+    background: yellow;
+}
+
+.chip.white {
+    background: white;
+}
+
+.chip.activeColumn{
+    border: 3px solid orange;
+}
+
+.gameover {
+    visibility: visible;
+    border-radius: 10px;
+}
+
+.gameover.false {
+    display: none;
+    color: blue;
+    border-radius: 10px;
+}
+
+.gameover.true{
+    color: black;
+    visibility: visible;
+}
+
+.reset {
+    padding: 10px;
+    border-radius: 10px;
+}

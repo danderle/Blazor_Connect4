@@ -1,0 +1,25 @@
+﻿
+@using Connect4Blazor.Client.Data
+@using Connect4Blazor.Client.ViewModels
+@inject Connect4ViewModel VM
+
+
+<div class="row">
+    @foreach(Chip chip in VM.Chips)
+    {
+        <div class="cell">
+            <div @onclick="() => VM.MouseClick(chip)" class="chip @chip.Color
+                @(VM.ClickedColumn == chip.Column ? "activeColumn" : "")"></div>
+        </div>
+    }
+</div>
+
+@if (VM.GameOver)
+{
+    <div class="gameover @VM.GameOver">
+        <h1>Game over</h1>
+        <button class="reset" @onclick="() => VM.Reset()">Play Again</button>
+    </div>
+}
+
+
