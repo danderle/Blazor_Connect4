@@ -3,7 +3,7 @@
     align-self: center;
     margin: auto;
     width: 360px;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
 .cell {
